@@ -68,7 +68,7 @@ body.dark .container h1 {
 body.dark #task-input {
   background-color: #e2d7d7;
   color: #1b1a1a;
-  border: 2px solid #555;
+  border: 2px solid #cc0d0d;
 
 }
 body.dark #task-input:hover {
