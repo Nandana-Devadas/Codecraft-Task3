@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f34dcf;
+  color: #333;
+  padding: 40px 20px;
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background-color: #d6c8c8;
+  color: #cfcfcd;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #cba6f7;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .container {
+  background-color: #1e1e1e;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #111010;
+}
+
+body.dark .container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #e4dbdb;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #d10e28;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+#task-input:focus,
+#task-input:hover {
+  border-color: #007bff;
+  outline: none;
+}
+
+body.dark #task-input {
+  background-color: #e2d7d7;
+  color: #1b1a1a;
+  border: 2px solid #555;
+}
+
+#add-btn {
+  padding: 12px 15px;
+  background-color:  #e60ab6;
+  color: rgb(15, 12, 12);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#add-btn:hover {
+  background-color: #e6ecf1;
+  transform: scale(1.05);
+}
+
+#task-list {
+  list-style: none;
+}
+
+#task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #4579eb;
+  color: #1a1a18;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+#task-list li:hover {
+  background-color: #e7e7e7;
+}
+
+body.dark #task-list li {
+  background-color: #d8cfcf;
+}
+
+.task.done {
+  text-decoration: line-through;
+  color: rgb(14, 114, 20);
+  opacity: 0.7;
+}
+
+.delete-btn {
+  background-color: #f71010;
+  color: rgb(14, 12, 12);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #df0f0f;
+  transform: scale(1.05);
+}
+
+#mode-toggle {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+body.dark #mode-toggle {
+  background: #f5f5f5;
+  color: #121212;
+}
+
+#task-list input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+ 
+}
+
